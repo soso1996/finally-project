@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family:Raleway-VariableFont;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather-Black.ttf);
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+body{
+    /* overflow: hidden; */
+    background-color: #ffffff;
+    background-image: url(../img/background.jpg);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+}
+header{
+    padding: 30px;
+    background-color: #d8d8d8;
+    /* height: 150px; */
+    opacity: 0.8;
+    width: 100%;
+}
+
+header h1{
+    width: 180px;
+    height: 100px;
+    background-image: url(../img/logo.jpg);
+    background-color: #d8d8d8;
+    background-size: 180px 100px;
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+    border-radius: 50%;
+    text-indent: -3255px;
+}
+header h1 a{
+    display: block;
+    width: 150px;
+    height: 50px;
+}
+header nav{
+    align-items: center;
+    margin-left: -70px;
+    margin-top: -60px;
+}
+header ul{
+    width: 830px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+    margin-left: 300px ;
+
+}
+header ul li{
+    background-color: rgb(0, 162, 255);
+    margin-left: -20px;
+    border-radius: 10px;
+    font-family: Merriweather;
+    opacity: 0.8;
+    
+}
+header ul a{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding: 5px 10px;
+}
+header ul li :hover{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    background-color: #e61c7a;
+    transition: 1s;
+}
+
+.carousel-inner {
+
+margin-top: 30px;
+margin-bottom: 30px;
+padding-left: 500px;
+
+}
+
+
+.carousel-inner .item{
+    
+    width: 350px;
+    height: 300px;
+   
+}
+.carousel-inner>.item>img{
+    width: 100%;
+    height: 100%;
+}
+
+.conteineri{
+    width: 100%;
+    height: 700px;
+    background-color: #d8d8d8;
+    padding-top: 40px;
+    padding-left: 30px;
+    background-image: url(../img/funjebi.jpg);
+
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    
+}
+
+
+.conteineri .welcome{
+    width: 350px;
+    font-size: 30px;
+    color: #1db173;
+    font-family: Merriweather;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.best{
+    width: 500px;
+    font-size: 50px;
+    color: #b10f4d;
+    font-family: Merriweather;
+    font-weight: 900;
+    text-transform:uppercase;
+}
+.wbp{
+    width: 85%;
+}
+.conteiner .profile{
+    width: 600px;
+    height: 350px;
+  
+}
+.profile img{
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.button{
+    width: 500px;
+    height: 100px;
+    margin: 100px auto; 
+    
+}
+
+.button1{
+    width: 200px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 8px;
+    border: 1px solid #e61c7a;
+    background-color: rgb(0, 162, 255);
+    opacity: 0.8;
+
+}
+.button1 a{
+    font-size: 22px;
+    font-family: Merriweather;
+    color: rgb(233, 226, 232);
+}
+.button :hover.button1{
+    width: 210;
+    height: 60px;
+    box-shadow: 5px 5px 5px;
+    padding-top: 10px;
+    background-color: #e61c7a;
+    transition: .2s;
+    
+}
+
+
+main .happy{
+    text-align: center;
+    font-size: 56px;
+    font-family: Merriweather;
+    font-weight: bold;
+    color: #4598db;
+    /* background-color: #101010; */
+}
+.happy span{
+    color: #e61c8b;
+}
+
+
+
+/* ////////footer////////// */
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s ;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
+/* ///////////////about/////// */
+.saerto{
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+}
+
+.about{
+    
+    width: 30%;
+    height: 400px;
+    padding-left: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-image: url(../img/paintanim.jpg);
+    background-size: 100%;
+}
+
+ .ta{
+    font-family: Merriweather;
+    font-size: 28px;
+    text-transform: capitalize;
+    padding: 20px 100px;
+    
+
+}
+.ta span{
+    color:#f9004d;
+    font-family: Merriweather;
+}
+.company{
+    font-size: 22px;
+    font-family: Merriweather;
+}
+.company span{
+    color:#2694c0;
+}
+.mxatvari{
+    width: 30%;
+    height: 100%;
+}
+.mxatvari img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.circle{
+    margin-top: 60px;
+    
+}
+
+
+
+/* //////////gallery. product///// */
+
+
+.col-sm-4{
+    width: 25%;
+    
+    
+}
+.thumbnail {
+   
+    
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+   
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    
+  }
+  
+  
+
+  /* ////////contact//////// */
+
+.media{
+    width: 800px;
+    height: 120px;
+    margin: 150px auto;
+    padding: 40px;
+    
+ }
+
+.media.mediainner{
+    width: 60px;
+    height: 60px;
+    
+ }
+.media .mediainner img{
+    width: 60px;
+    height: 60px;
+    background-color: #1db173;
+    border-radius: 50%;
+    
+ }
+.media a{
+    padding: 5px 10px;
+    position: relative;
+   
+ }
+.media :hover img {
+    width: 70px;
+    height: 70px;
+    box-shadow: 10px 10px 10px 10px;
+	transition: .6s ;   
+ }
+
+ 
+.creat{
+    font-family: Merriweather;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 20px 100px;
+   
+ }
+.p{
+    font-family: Merriweather;
+    font-size: 22px;
+    font-weight: bold;
+ }
+.fa-bars-icons{
+    display: none;}
+
+ /* /////////////ipad///////// */
+
+@media only screen and (max-width: 1024px) 
+{
+    /* .body{
+        overflow: hidden;
+    } */
+    
+    .fa-bars-icons {
+        display: block;
+        
+      }
+    header ul{
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    header ul li{
+        width: 140px;
+        margin-top: 6px;
+    }
+    header nav{
+        overflow: hidden;
+        margin-top: 50px;
+        display: none;
+        
+  }
+  /* ///////header///// */
+  /* ////////main//////// */
+
+  main .happy{
+    width: 100%;
+  }
+  .carousel-inner{
+    margin-left: -160px;
+  }
+  .about{
+    width: 30%;
+  }
+  .about .ta{
+    margin-left: -60px;
+    font-size: 22px;
+  }
+  .company{
+    font-size: 18px;
+  }
+ .saerto{
+    margin-bottom: 100px;
+  }
+
+ }
+
+
+@media only screen and (max-width: 390px) {
+    
+ header #nav {
+ margin-left: -300px;
+ overflow: hidden;
+}
+main .happy{
+        font-size: 22px;
+ }
+
+.carousel-inner .item{
+    
+        width: 150px;
+        height: 100px;
+       
+    }
+.carousel-inner>.item>img{
+        width: 100%;
+        height: 100%;
+    }
+.conteineri .welcome{
+    margin-top: 10px;
+    font-size: 14px;
+    }
+ .conteineri .best{
+    font-size: 16px;
+    width: 150px;
+    /* background-color: #e61c7a; */
+    }
+.wbp{
+    display: block;
+  }
+div.profile{
+    width: 230px;
+ }
+ div.profile img{
+   width: 100%;
+   position: relative;
+   top: 0;
+   right:0;
+ }
+ .conteineri{
+    height: 400px;
+    overflow: hidden;
+ }
+ .button{
+    width: 200px;
+    height: 50px;
+    margin: 50px auto; 
+    
+    }
+
+    .button1{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    padding-top: 4px;
+    }
+   .button1 a{
+        font-size: 12px;
+   }
+    .button :hover.button1{
+        width: 104;
+        height: 52px;
+        box-shadow: 2px 2px 2px;
+        padding-top: 10px;
+        background-color: #e61c7a;
+        transition: .2s;
+ }
+
+    /* ///////////about////////  */
+    .main{
+        overflow: hidden;
+    }
+    .saerto{
+        width: 90%;
+        height: 830px;
+        padding: 14px;
+        margin-top: 30px;
+        margin-bottom: 250px;
+        display: block;
+        
+    }
+    .about{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .tako{
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: -50px;
+    }
+    .company{
+        font-size: 16px;
+        width: 200px;
+        margin: 20px auto;
+        font-weight: bold;
+    }
+    .mxatvari{
+        width: 200px;
+        height: 250px;
+        margin: 10px auto;
+    }
+    
+    /* /* //////gallery//// */
+
+    .creat{
+        font-size: 24px;
+    }
+    .p{
+        font-size: 20px;
+    }
+    .col-sm-4{
+        width: 100%;
+        
+    }
+    .media {
+       width: 70%;
+       height: 420px;
+       flex-wrap: wrap;
+       margin: 50px  auto;
+    }
+}
+    
